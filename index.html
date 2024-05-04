@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('#mobile-menu-toggle'); // Updated ID
+        const mobileMenu = document.querySelector('#mobile-menu');
+
+        menuToggle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+</script>
+<body>
+    <!-- JavaScript to toggle mobile menu -->
+    
+
+    <div class="w-screen h-screen sm:w-screen ">
+            
+         <!-- section 1 -->
+
+           <!-- navigation bar -->
+        <div class="bg-gray-900">
+            <nav class="bg-gray-800">
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                  <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                      <!-- Mobile menu button-->
+                      <button type="button" id="mobile-menu-toggle" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <!-- Icon -->
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Closed menu icon -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!-- Open menu icon -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                      <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                          <a href="#Home" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                          <a href="#About" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                          <a href="#Projects" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+                          <a href="#Contact" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            
+              
+                      <!-- Profile dropdown -->
+                      <div class="relative ml-3">
+              
+                        <!--
+                          Dropdown menu, show/hide based on menu state.
+              
+                          Entering: "transition ease-out duration-100"
+                            From: "transform opacity-0 scale-95"
+                            To: "transform opacity-100 scale-100"
+                          Leaving: "transition ease-in duration-75"
+                            From: "transform opacity-100 scale-100"
+                            To: "transform opacity-0 scale-95"
+                        -->
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Mobile menu, initially hidden -->
+               <div class="sm:hidden hidden" id="mobile-menu">
+    <!-- Mobile menu content -->
+                <div class="space-y-1 px-2 pb-3 pt-2">
+                   <!-- Navigation links -->
+                    <a href="#Home" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                    <a href="#About" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+                    <a href="#Projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+                    <a href="#Contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                </div>
+                </div>
+
+    </nav>
+              
+  
+
+            <!-- section 1 -->
+
+           <!-- flex flex-col-reverse lg:flex-row items-center justify-center py-10 lg:py-20 px-4 lg:px-0 lg:container mx-auto -->
+           <div class="text-yellow-200 flex-row-reverse" id="Home">
+
+            <div class=" flex justify-center rounded-full p-2 mt-5 " > 
+                <img src="./images/100027pv-9000px2.jpg" class="rounded-3xl h-96" loading="lazy"/>
+            </div>
+
+
+            <div class="flex-col font-bold text-4xl font-serif mb-3 " >
+                <h1 class=" flex justify-center">Chirag Agrawal</h1>
+                <h1 class=" flex justify-center text-3xl text-white">Software Enginner</h1>
+            </div>
+
+            <div class="m-2 p-2 flex justify-center gap-10 text-3xl">
+                <a href="https://twitter.com/ChiragAgra1795" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2"><i class="fab fa-twitter text-blue-500 text-xl"></i></a>
+                <a href="https://www.instagram.com/chirag_9752_/" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/chirag-agrawal-41b071222/" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2" ><i class="fab fa-linkedin text-blue-700 text-xl"></i></a>
+                <a href="https://github.com/chirag9752" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2"><i class="fa-brands fa-github"></i> </a>
+            </div>
+            </div>
+            
+
+
+            <!-- section 2 -->
+
+              
+        <div class="text-white mt-0 bg-slate-700" id="About">
+            <h1 class="font-bold text-5xl font-serif flex justify-center mt-6 pt-4" >About</h1>
+            <div class="w-4/5 mx-auto text-2xl">
+                <br>
+                <p> 🚀 Passionate MERN Stack Developer | Crafting Seamless Web Experiences .</p>
+                <br>
+                <p>Hello ! ッ<br><span>I am Chirag Agrawal</span></p>
+                <br>
+                <p>
+                    👋 A dedicated MERN Stack Developer with a knack for building cutting-edge web applications. With a strong command over MongoDB, Express.js, React, and Node.js, I bring your ideas to life by seamlessly integrating front-end finesse with powerful back-end functionalities.
+                    <br><br>
+                     🎨 I'm all about turning designs into pixel-perfect, responsive UIs using React. My expertise extends to the back-end realm where I create robust APIs and ensure efficient data management with Node.js and Express.js. MongoDB is my playground for crafting optimized data schemas and ensuring data security.
+                    <br><br>
+                     🌐 I'm a firm believer in teamwork, collaborating seamlessly with designers and fellow developers. Beyond coding, I'm an agile enthusiast, an avid learner, and a tech communicator who breaks down complex concepts for everyone to understand.☺️ 
+                </p>
+                <br>
+                
+
+                <div class="flex flex-wrap lg:justify-around">
+                    <div class="mt-5">
+                        <h1 class="font-bold text-4xl ml-1 ">Personal Details</h1>
+                        <h3 class="mt-5" ><i class="fa-solid fa-phone"></i> Phone --   <span class="ml-5">7224852220</span></h3>
+                        <h3 class="mt-1" ><i class="fa-solid fa-envelope"></i>  Email --   <span class="ml-5" >chiragagrawal61230@gmail.com</span></h3>
+                        <h3 class="mt-1" ><i class="fa-brands fa-github"></i>  github --   <span class="ml-5">chirag9752</span></h3>
+                        <h3 class="mt-1" ><i class="fa-solid fa-location-crosshairs"></i> Location - <span class="ml-3">Rajendra Nagar Indore</span></h3>
+                    </div>
+
+                    <div class="w-80">
+                        <h1 class="font-bold text-4xl ml-1 mt-5" >Hobbies</h1>
+                        <div class="flex flex-wrap gap-x-4 ">
+
+                            <div class="mt-5 bg-gray-900 m-2 p-4 rounded-2xl">
+                                <i class="fa-solid fa-plane"></i>
+                                <h5 class="text-sm" >Travel</h5>
+                            </div>
+
+                            <div class="mt-5 bg-gray-900 m-2 p-4  rounded-2xl">
+                                <i class="fa-solid fa-music"></i>
+                                <h5 class="text-sm" >Music</h5>
+                            </div>
+
+                            <div class="mt-5 bg-gray-900 m-2 p-4  rounded-2xl">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <h5 class="text-sm" >Gym</h5>
+                            </div>
+
+                            <div class="mt-5 bg-gray-900 m-2 p-4  rounded-2xl">
+                                <i class="fa-solid fa-code"></i>
+                                <h5 class="text-sm" >Coding</h5>
+                            </div>
+
+                            <div class="mt-5 bg-gray-900 m-2 p-4  rounded-2xl">
+                                <i class="fa-solid fa-person-swimming"></i>
+                                <h5 class="text-sm" >Swimming</h5>
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                   
+
+                </div>
+
+                
+            </div>
+            
+            <br><br>
+
+            
+        </div>
+
+
+          <!-- section 3 -->
+            <div class="bg-slate-900" id="Projects">
+                   <h1 class="text-white mt-5 font-serif text-6xl flex justify-center " >Projects</h1>
+
+                   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  w-[80%] mx-auto gap-4 mt-4" >
+                     <img src="./images/0_M4bxiCIjcTK-2Xr6.jpg" loading="lazy"/>
+                     <img src="./images/1_x0d41ns8PTQZz4a3VbMrBg.png" loading="lazy"/>
+                     <img src="./images/Ai.avif" loading="lazy"/>
+                     <img src="./images/youtube.webp" loading="lazy"/>
+                     <img src="./images/team.jpg" loading="lazy"/>
+                     <img src="./images/mentor.jpeg" loading="lazy"/>
+                   </div>
+
+                   <br><br>
+            </div>
+        
+        <!-- section 4 -->
+    
+        <div id="Contact" class="w-screen h-full pb-5" style="background-image: url('./images/bgimg.jpeg');" >
+            <h1 class="text-white font-serif flex justify-center font-bold text-5xl pt-5">Contact Me</h1>
+            
+            <div class="w-[70%] mx-auto flex flex-col md:flex-row justify-between mt-16 ">
+                
+                    <form action="mailto:er.chiragagrawal61230@gmail.com" class="flex flex-col gap-y-10 md:p-4" >
+                        <input type="text" placeholder="Enter your name" class="rounded-full px-3 py-5"/>
+                        <input type="text" placeholder="Enter your email" class="rounded-full px-3 py-5"/>
+                        <input type="text" placeholder="Enter your phone " class="rounded-full px-3 py-5"/>
+                        <input type="text" placeholder="Enter your subject" class="rounded-full px-3 py-5" />
+                        <input type="text" placeholder="Enter your Message" class="rounded-full px-3 py-5"/>
+
+                        <button class="text-white font-serif text-2xl outline rounded-full bg-blue-800 h-14 w-[50%] mx-auto"> send <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+
+                    <br>
+                    <br>
+                   
+            
+
+                <div class="md:p-4 sm:mx-auto">
+                    <img class="rounded-2xl h-96 w-96 " loading="lazy" src="./images//WhatsApp Image 2024-05-03 at 5.39.40 PM.jpeg" alt="" />
+                </div>
+            </div>
+                 
+        </div>
+
+
+        <footer class="bg-gray-600 text-white w-screen h-full pt-4 pb-10">
+            
+            <div class="flex flex-wrap sm:justify-center md:justify-center lg:justify-around w-[80%] mx-auto">
+                <div class="mt-5">
+                    <h1 class="font-bold text-4xl ml-1 ">Personal Details</h1>
+                    <h3 class="mt-5" ><i class="fa-solid fa-phone"></i> Phone --   <span class="ml-5">7224852220</span></h3>
+                    <h3 class="mt-1" ><i class="fa-solid fa-envelope"></i>  Email --   <span class="ml-5" >chiragagrawal61230@gmail.com</span></h3>
+                    <h3 class="mt-1" ><i class="fa-brands fa-github"></i>  github --   <span class="ml-5">chirag9752</span></h3>
+                    <h3 class="mt-1" ><i class="fa-solid fa-location-crosshairs"></i> Location - <span class="ml-3">Rajendra Nagar Indore</span></h3>
+                </div>
+
+                <div class="w-80">
+                    <h1 class="font-bold text-4xl ml-1 mt-5" >Contact Me</h1>
+                    <div class="flex flex-wrap gap-x-4 ">
+
+                        <div class="m-2 p-2 flex justify-center gap-10 text-3xl">
+                            <a href="https://twitter.com/ChiragAgra1795" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2"><i class="fab fa-twitter text-blue-500 text-xl"></i></a>
+                            <a href="https://www.instagram.com/chirag_9752_/" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/chirag-agrawal-41b071222/" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2" ><i class="fab fa-linkedin text-blue-700 text-xl"></i></a>
+                            <a href="https://github.com/chirag9752" target="_blank" class="outline rounded-2xl flex justify-center px-3 py-2"><i class="fa-brands fa-github"></i> </a>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+               
+
+            </div>
+        </footer>
+    
+    </div>
+
+  </div>
+           
+
+
+    </div>
+</body>
+</html>
